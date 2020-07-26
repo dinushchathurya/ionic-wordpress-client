@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-
 
 @Injectable({
   providedIn: 'root'
 })
 export class WordpressService {
 
-  url = `https://https://exploresrilankadotblog.wordpress.com/blog/wp-json/wp/v2/`;
+  url = `http://localhost/Order%20Me/wordpress/?p=123/wp-json/wp/v2/`;
   totalPosts = null;
   pages: any;
 
